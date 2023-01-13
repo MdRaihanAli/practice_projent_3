@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Work+Sans:wght@300;400;500;600;700;800&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #9F9F9F;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    width: 870px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+/* top plear style :start */
+.title {
+    padding-left: 33px;
+    padding-top: 33px;
+    color: #562EFF;
+}
+
+.top_player {
+    display: grid;
+    grid-row-gap: 29px;
+    padding: 33px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.pleyer {
+    display: flex;
+    align-items: center;
+}
+
+.pleyer h3 {
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 16px;
+}
+
+.pleyer img {
+    display: flex;
+    align-items: center;
+    width: 56px;
+    height: 56px;
+}
+
+/* top plear style :end */
+/* top_blogs style start */
+.hr{
+    padding: 0 33px;
+}
+.top_blogs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 26px;
+    padding: 33px;
+}
+
+.top_blog {
+    display: flex;
+}
+
+.blog_img img {
+    width: 177px;
+    height: 117px;
+}
+
+.blog_info h3 {
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 16px;
+    margin-bottom: 6px;
+}
+
+.blog_info p {
+    font-size: 16px;
+    font-weight: 400;
+    margin-left: 16px;
+    color:#9F9F9F;
+}
+
+.blog_info p span {
+    color: #562EFF;
+}
+
+/* top_blogs style end */
+
+
+/* corse_blog */
+.main{
+    margin-top: 21px;
+}
+.letes_corse{
+    padding: 33px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.corse_img img{
+    width: 224px;
+height: 104px;
+}
+.corse_info h3 {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 6px;
+}
+.corse_info p {
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 19px;
+    color: #ED6B4F;
+}
+.reting{
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: tomato;
+}
+.cl_tan{
+    color: #AEAEAE;
+}
+.li_red {
+    background-color: #FFE4E8;
+    padding: 3px 5px;
+    border-radius: 15px;
+    color: #FF4A60;
+}
+
+
+@media screen and (max-width:576px) {
+    .container{
+        width: 100%;
+    }
+    .top_player, .top_blogs{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .letes_corse{
+        flex-direction: column;
+    }
+}
